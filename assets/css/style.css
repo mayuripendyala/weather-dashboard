@@ -5,6 +5,7 @@
 body {
   font-family: Arial;
   margin: 0;
+  
 }
 
 header {
@@ -12,6 +13,10 @@ header {
   text-align: center;
   background: #210f93;
   color: #fff;
+}
+
+main{
+  padding-left: 10%;
 }
 
 

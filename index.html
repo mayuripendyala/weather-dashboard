@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
+    /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!--  
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -19,56 +22,44 @@
   </head>
 
   <body>
-    <header>
+    <header class = "bg-blue text-white text-center p-2">
       <h1>Weather Dashboard</h1>
-      
     </header>
 
-    <nav class="nav">
-      
-    </nav>
-
-    <main>
+    <main class="container-fluid">
       <!-- Sidebar -->
-      <aside class="search-weather">
-        <h2>Search For City</h2>
+      <div class="row">
+        <div class="col-12 col-md-3 p-2 search-column">
+          <div class="city-search">
+             <h4>Search For City</h>
+              <input id="city-input" type="text" class="form-control" autofocus="true" placeholder="Enter city name" aria-label="Enter city name" />
+             <button class="btn btn-primary" type="button" id="search-button" ><i class="fas fa-search"></i></button>
+
+              <div class = "past-search " id = "past-search"></div>
+        </div>
+        <div class="col-12 col-md-9">
+              <div class="row border selected-city" id="current-forecast">
+                <div class="col-12">
+                  <h2 id="sentered-city"></h2>
+                  <div id="current-weather-container" class="list-group-item"></div>
+                </div>
+              </div>
+              <div class = "row border" id = "5d-forecast">
+                <h2 class= "col-12" id = "forecast"></h2>
+                <div class = "d-flex" id = "5d-container"></div>
+        </div> 
+
+        </div>
         
-      </aside>
-      <!-- Product Cards -->
-      <div class="weather">
-        <!-- <section class="card">
-          <header>Camera</header>
-          <img src="./assets/images/camera.jpg" alt="black camera" />
-          <p>Price: $300</p>
-        </section>
-        <section class="card">
-          <header>Tablet</header>
-          <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
-          <p>Price: $150</p>
-        </section>
-        <section class="card">
-          <header>Toilet Paper</header>
-          <img
-            src="./assets/images/toilet-paper.jpg"
-            alt="rolls of toilet paper in a basket"
-          />
-          <p>Price: $30</p>
-        </section>
-        <section class="card">
-          <header>Wooden Spoons</header>
-          <img
-            src="./assets/images/wooden-spoons.jpg"
-            alt="4 wooden spoons with different seasonings"
-          />
-          <p>Price: $10</p>
-        </section> -->
+        </div>
+      
       </div>
     </main>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
-    <script src="Assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
 
