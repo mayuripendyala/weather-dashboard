@@ -30,28 +30,28 @@
       <!-- Sidebar -->
       <div class="row">
         <div class="col-12 col-md-3 p-2 search-column">
-          <div class="city-search">
+          <div class="col-12">
              <h4>Search For City</h>
               <input id="city-input" type="text" class="form-control" autofocus="true" placeholder="Enter city name" aria-label="Enter city name" />
-             <button class="btn btn-primary" type="button" id="search-button" ><i class="fas fa-search"></i></button>
-
-              <div class = "past-search " id = "past-search"></div>
+             <button class="btn btn-primary" type="button" id="search-button" >Search</button>  
         </div>
+        <div class = "past-search " id = "past-search"></div>
+      </div>
         <div class="col-12 col-md-9">
               <div class="row border selected-city" id="current-forecast">
                 <div class="col-12">
-                  <h2 id="sentered-city"></h2>
-                  <div id="current-weather-container" class="list-group-item"></div>
+                  <h2 id="search-city"></h2>
+                  <div id="current-weather-container" class="list-group"></div>
                 </div>
               </div>
-              <div class = "row border" id = "5d-forecast">
+              <div class = "row border" id = "fived-forecast">
                 <h2 class= "col-12" id = "forecast"></h2>
-                <div class = "d-flex" id = "5d-container"></div>
-        </div> 
+                <div class = "d-flex" id = "fived-container"></div>
+              </div> 
 
         </div>
         
-        </div>
+        
       
       </div>
     </main>
